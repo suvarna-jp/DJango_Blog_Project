@@ -130,19 +130,18 @@ Instead of return HttpRequest line, code :
 return render(request, 'bloggers_adda/home.html')
 ```
 
-# Added Bootstrap code
+### Added Bootstrap code
 
-# Created 'static/bloggers_adda/' folder & Added main.css file
+### Created 'static/bloggers_adda/' folder & Added main.css file
 
-# Modified templates by adding more code
+### Modified templates by adding more code
 
-# Added base.html to contain all the common html code that would have otherwise been on all templates
+### Added base.html to contain all the common html code that would have otherwise been on all templates
 
-# used code snippets for urls instead of hard coding them... for example :
+### used code snippets for urls instead of hard coding them... for example :
 ```
-{% load static %} 
+{% load static %} # => has been used on base.html even before <!DOCTYPE html> which is to be noted in Django
 ```
-=> has been used on base.html even before <!DOCTYPE html> which is to be noted in Django
 
 Also used :
 
