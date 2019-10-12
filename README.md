@@ -151,3 +151,4 @@ Also used :
 
 {% url 'bloggers_adda_home' %} # => for href link to home page instead of hardcoding /home/
 {% url 'bloggers_adda_home' %} # => for href link to about page instead of hardcoding /about/
+```
