@@ -102,9 +102,9 @@ def about(request):
 2) Modify urls.py file in bloggers_adda ==>>
 
 Add line to urlpatterns list :
-
+```
 path('about/', views.about, name='bloggers_adda_about'),
-
+```
 
 # Creating templates
 
@@ -119,12 +119,13 @@ Copy class name : 'BloggersAddaConfig'
 4) bloggers_adda_project/settings.py ==>>
 
 Add line on top of the INSTALLED_APPS list 
-
+```
 INSTALLED_APPS = [
     'bloggers_adda.apps.BloggersAddaConfig',
-
+```
 5) bloggers_adda/views.py ==>>
 
 Instead of return HttpRequest line, code :
-
+```
 return render(request, 'bloggers_adda/home.html')
+```
