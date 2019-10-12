@@ -129,3 +129,25 @@ Instead of return HttpRequest line, code :
 ```
 return render(request, 'bloggers_adda/home.html')
 ```
+
+# Added Bootstrap code
+
+# Created 'static/bloggers_adda/' folder & Added main.css file
+
+# Modified templates by adding more code
+
+# Added base.html to contain all the common html code that would have otherwise been on all templates
+
+# used code snippets for urls instead of hard coding them... for example :
+```
+{% load static %} 
+```
+=> has been used on base.html even before <!DOCTYPE html> which is to be noted in Django
+
+Also used :
+
+```
+{% static 'bloggers_adda/main.css' %}  # => for stylesheet href
+
+{% url 'bloggers_adda_home' %} # => for href link to home page instead of hardcoding /home/
+{% url 'bloggers_adda_home' %} # => for href link to about page instead of hardcoding /about/
